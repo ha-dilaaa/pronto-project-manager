@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% load static %}
+
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -10,16 +13,16 @@
         <title>Login - HRMS admin template</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -36,7 +39,7 @@
 				
 					<!-- Account Logo -->
 					<div class="account-logo">
-						<a href="admin-dashboard.html"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
+						<a href=""><img src="{% static 'assets/img/logo2.png' %}" alt="Dreamguy's Technologies"></a>
 					</div>
 					<!-- /Account Logo -->
 					
@@ -46,7 +49,7 @@
 							<p class="account-subtitle">Access to our dashboard</p>
 							
 							<!-- Account Form -->
-							<form action="admin-dashboard.html">
+							<form action="{% url 'admin_dashboard' %}">
 								<div class="form-group">
 									<label>Email Address</label>
 									<input class="form-control" type="text" value="admin@dreamguys.in">
@@ -57,7 +60,7 @@
 											<label>Password</label>
 										</div>
 										<div class="col-auto">
-											<a class="text-muted" href="forgot-password.html">
+											<a class="text-muted" href="{% url 'forgot_password' %}">
 												Forgot password?
 											</a>
 										</div>
@@ -71,7 +74,7 @@
 									<button class="btn btn-primary account-btn" type="submit">Login</button>
 								</div>
 								<div class="account-footer">
-									<p>Don't have an account yet? <a href="register.html">Register</a></p>
+									<p>Don't have an account yet? <a href="{% url 'register' %}">Register</a></p>
 								</div>
 							</form>
 							<!-- /Account Form -->
@@ -84,13 +87,13 @@
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
 		
 		<!-- Custom JS -->
-		<script src="assets/js/app.js"></script>
+		<script src="{% static 'assets/js/app.js' %}"></script>
 		
     </body>
 </html>
