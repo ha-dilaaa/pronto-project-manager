@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--LOAD -->
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -49,7 +51,7 @@
 			
 				<!-- Logo -->
                 <div class="header-left">
-                    <a href="admin-dashboard.html" class="logo">
+                    <a href="{% url 'admin_dashboard' %}" class="logo">
 						<img src="assets/img/logo.png" width="40" height="40" alt="">
 					</a>
                 </div>
@@ -70,7 +72,7 @@
 							<a href="javascript:void(0);" class="responsive-search">
 								<i class="fa fa-search"></i>
 						   </a>
-							<form action="search.html">
+							<form action="{% url 'search' %}">
 								<input class="form-control" type="text" placeholder="Search here">
 								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
 							</form>
@@ -101,10 +103,10 @@
 					<!-- /Flag -->
 					
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">Login</a>
+						<a class="nav-link" href="{% url 'home' %}">Login</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="register.html">Register</a>
+						<a class="nav-link" href="{% url 'register' %}">Register</a>
 					</li>
 				</ul>
 				<!-- /Header Menu -->
@@ -113,8 +115,8 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="index.html">Login</a>
-						<a class="dropdown-item" href="register.html">Register</a>
+						<a class="dropdown-item" href="{% url 'home' %}">Login</a>
+						<a class="dropdown-item" href="{% url 'register' %}">Register</a>
 					</div>
 				</div>
 				<!-- /Mobile Menu -->
@@ -134,7 +136,7 @@
 							<div class="col">
 								<h3 class="page-title">Jobs</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="{% url 'admin_dashboard' %}">Dashboard</a></li>
 									<li class="breadcrumb-item active">Jobs</li>
 								</ul>
 							</div>

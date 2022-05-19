@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--LOAD -->
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -36,7 +38,7 @@
 				
 					<!-- Account Logo -->
 					<div class="account-logo">
-						<a href="admin-dashboard.html"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
+						<a href="{% url 'admin_dashboard' %}"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
 					</div>
 					<!-- /Account Logo -->
 					
@@ -51,7 +53,7 @@
 							<!-- /Lock User Img -->
 							
 							<!-- Account Form -->
-							<form action="admin-dashboard.html">
+							<form action="{% url 'admin_dashboard' %}">
 								<div class="form-group">
 									<label>Password</label>
 									<input class="form-control" type="password">
@@ -60,7 +62,7 @@
 									<button class="btn btn-primary account-btn" type="submit">Enter</button>
 								</div>
 								<div class="account-footer">
-									<p>Sign in as a different user? <a href="index.html">Login</a></p>
+									<p>Sign in as a different user? <a href="{% url 'home' %}">Login</a></p>
 								</div>
 							</form>
 							<!-- /Account Form -->

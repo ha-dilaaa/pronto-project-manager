@@ -67,7 +67,7 @@ def chat(request):
     return render(request, 'chat.html')
 
 def client_profile(request):
-    return render(request, 'client-profile.html')
+    return render(request, 'client-profile')
 
 def clients_list(request):
     return render(request, 'clients-list.html')
@@ -316,7 +316,7 @@ def privacy_policy(request):
     return render(request, 'privacy-policy.html')
 
 def profile(request):
-    return render(request, 'profile.html')
+    return render(request, 'profile')
 
 def project_list(request):
     return render(request, 'project-list.html')

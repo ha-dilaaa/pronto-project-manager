@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--LOAD -->
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -45,7 +47,7 @@
 			
 				<!-- Logo -->
                 <div class="header-left">
-                    <a href="admin-dashboard.html" class="logo">
+                    <a href="{% url 'admin_dashboard' %}" class="logo">
 						<img src="assets/img/logo.png" width="40" height="40" alt="">
 					</a>
                 </div>
@@ -76,7 +78,7 @@
 							<a href="javascript:void(0);" class="responsive-search">
 								<i class="fa fa-search"></i>
 						   </a>
-							<form action="search.html">
+							<form action="{% url 'search' %}">
 								<input class="form-control" type="text" placeholder="Search here">
 								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
 							</form>
@@ -119,7 +121,7 @@
 							<div class="noti-content">
 								<ul class="notification-list">
 									<li class="notification-message">
-										<a href="activities.html">
+										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
 													<img alt="" src="assets/img/profiles/avatar-02.jpg">
@@ -132,7 +134,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="activities.html">
+										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
 													<img alt="" src="assets/img/profiles/avatar-03.jpg">
@@ -145,7 +147,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="activities.html">
+										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
 													<img alt="" src="assets/img/profiles/avatar-06.jpg">
@@ -158,7 +160,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="activities.html">
+										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
 													<img alt="" src="assets/img/profiles/avatar-17.jpg">
@@ -171,7 +173,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="activities.html">
+										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
 													<img alt="" src="assets/img/profiles/avatar-13.jpg">
@@ -186,7 +188,7 @@
 								</ul>
 							</div>
 							<div class="topnav-dropdown-footer">
-								<a href="activities.html">View all Notifications</a>
+								<a href="{% url 'activities' %}">View all Notifications</a>
 							</div>
 						</div>
 					</li>
@@ -205,7 +207,7 @@
 							<div class="noti-content">
 								<ul class="notification-list">
 									<li class="notification-message">
-										<a href="chat.html">
+										<a href="{% url 'chat' %}">
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
@@ -222,7 +224,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="chat.html">
+										<a href="{% url 'chat' %}">
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
@@ -239,7 +241,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="chat.html">
+										<a href="{% url 'chat' %}">
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
@@ -256,7 +258,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="chat.html">
+										<a href="{% url 'chat' %}">
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
@@ -273,7 +275,7 @@
 										</a>
 									</li>
 									<li class="notification-message">
-										<a href="chat.html">
+										<a href="{% url 'chat' %}">
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
@@ -292,7 +294,7 @@
 								</ul>
 							</div>
 							<div class="topnav-dropdown-footer">
-								<a href="chat.html">View all Messages</a>
+								<a href="{% url 'chat' %}">View all Messages</a>
 							</div>
 						</div>
 					</li>
@@ -305,9 +307,9 @@
 							<span>Admin</span>
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="profile.html">My Profile</a>
-							<a class="dropdown-item" href="settings.html">Settings</a>
-							<a class="dropdown-item" href="index.html">Logout</a>
+							<a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+							<a class="dropdown-item" href="{% url 'settings' %}">Settings</a>
+							<a class="dropdown-item" href="{% url 'home' %}">Logout</a>
 						</div>
 					</li>
 				</ul>
@@ -317,9 +319,9 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile.html">My Profile</a>
-						<a class="dropdown-item" href="settings.html">Settings</a>
-						<a class="dropdown-item" href="index.html">Logout</a>
+						<a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+						<a class="dropdown-item" href="{% url 'settings' %}">Settings</a>
+						<a class="dropdown-item" href="{% url 'home' %}">Logout</a>
 					</div>
 				</div>
 				<!-- /Mobile Menu -->
@@ -338,27 +340,27 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="admin-dashboard.html">Admin Dashboard</a></li>
-									<li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+									<li><a href="{% url 'admin_dashboard' %}">Admin Dashboard</a></li>
+									<li><a href="{% url 'employee_dashboard' %}">Employee Dashboard</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-cube"></i> <span> Apps</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="chat.html">Chat</a></li>
+									<li><a href="{% url 'chat' %}">Chat</a></li>
 									<li class="submenu">
 										<a href="#"><span> Calls</span> <span class="menu-arrow"></span></a>
 										<ul style="display: none;">
-											<li><a href="voice-call.html">Voice Call</a></li>
-											<li><a href="video-call.html">Video Call</a></li>
-											<li><a href="outgoing-call.html">Outgoing Call</a></li>
-											<li><a href="incoming-call.html">Incoming Call</a></li>
+											<li><a href="{% url 'voice_call' %}">Voice Call</a></li>
+											<li><a href="{% url 'video_call' %}">Video Call</a></li>
+											<li><a href="{% url 'outgoing_call' %}">Outgoing Call</a></li>
+											<li><a href="{% url 'incoming_call' %}">Incoming Call</a></li>
 										</ul>
 									</li>
-									<li><a href="events.html">Calendar</a></li>
-									<li><a href="contacts.html">Contacts</a></li>
-									<li><a href="inbox.html">Email</a></li>
-									<li><a href="file-manager.html">File Manager</a></li>
+									<li><a href="{% url 'events' %}">Calendar</a></li>
+									<li><a href="{% url 'contacts' %}">Contacts</a></li>
+									<li><a href="{% url 'inbox' %}">Email</a></li>
+									<li><a href="{% url 'file_manager' %}">File Manager</a></li>
 								</ul>
 							</li>
 							<li class="menu-title"> 
@@ -367,36 +369,36 @@
 							<li class="submenu">
 								<a href="#" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="employees.html">All Employees</a></li>
-									<li><a href="holidays.html">Holidays</a></li>
-									<li><a href="leaves.html">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
-									<li><a href="leaves-employee.html">Leaves (Employee)</a></li>
-									<li><a href="leave-settings.html">Leave Settings</a></li>
-									<li><a href="attendance.html">Attendance (Admin)</a></li>
-									<li><a href="attendance-employee.html">Attendance (Employee)</a></li>
-									<li><a href="departments.html">Departments</a></li>
-									<li><a href="designations.html">Designations</a></li>
-									<li><a href="timesheet.html">Timesheet</a></li>
-									<li><a href="shift-scheduling.html">Shift & Schedule</a></li>
-									<li><a href="overtime.html">Overtime</a></li>
+									<li><a href="{% url 'employees' %}">All Employees</a></li>
+									<li><a href="{% url 'holidays' %}">Holidays</a></li>
+									<li><a href="{% url 'leaves' %}">Leaves (Admin) <span class="badge rounded-pill bg-primary float-end">1</span></a></li>
+									<li><a href="{% url 'leaves_employee' %}">Leaves (Employee)</a></li>
+									<li><a href="{% url 'leave_settings' %}">Leave Settings</a></li>
+									<li><a href="{% url 'attendance' %}">Attendance (Admin)</a></li>
+									<li><a href="{% url 'attendance_employee' %}">Attendance (Employee)</a></li>
+									<li><a href="{% url 'departments' %}">Departments</a></li>
+									<li><a href="{% url 'designations' %}">Designations</a></li>
+									<li><a href="{% url 'timesheet' %}">Timesheet</a></li>
+									<li><a href="{% url 'shift_scheduling' %}">Shift & Schedule</a></li>
+									<li><a href="{% url 'overtime' %}">Overtime</a></li>
 								</ul>
 							</li>
 							<li> 
-								<a href="clients.html"><i class="la la-users"></i> <span>Clients</span></a>
+								<a href="{% url 'clients' %}"><i class="la la-users"></i> <span>Clients</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-rocket"></i> <span> Projects</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="projects.html">Projects</a></li>
-									<li><a href="tasks.html">Tasks</a></li>
-									<li><a href="task-board.html">Task Board</a></li>
+									<li><a href="{% url 'projects' %}">Projects</a></li>
+									<li><a href="{% url 'tasks' %}">Tasks</a></li>
+									<li><a href="{% url 'task_board' %}">Task Board</a></li>
 								</ul>
 							</li>
 							<li> 
-								<a href="leads.html"><i class="la la-user-secret"></i> <span>Leads</span></a>
+								<a href="{% url 'leads' %}"><i class="la la-user-secret"></i> <span>Leads</span></a>
 							</li>
 							<li> 
-								<a href="tickets.html"><i class="la la-ticket"></i> <span>Tickets</span></a>
+								<a href="{% url 'tickets' %}ets' %}"><i class="la la-ticket"></i> <span>Tickets</span></a>
 							</li>
 							<li class="menu-title"> 
 								<span>HR</span>
@@ -404,48 +406,48 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-files-o"></i> <span> Sales </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="estimates.html">Estimates</a></li>
-									<li><a href="invoices.html">Invoices</a></li>
-									<li><a href="payments.html">Payments</a></li>
-									<li><a href="expenses.html">Expenses</a></li>
-									<li><a href="provident-fund.html">Provident Fund</a></li>
-									<li><a href="taxes.html">Taxes</a></li>
+									<li><a href="{% url 'estimates' %}">Estimates</a></li>
+									<li><a href="{% url 'invoices' %}">Invoices</a></li>
+									<li><a href="{% url 'payments' %}">Payments</a></li>
+									<li><a href="{% url 'expenses' %}">Expenses</a></li>
+									<li><a href="{% url 'provident_fund' %}">Provident Fund</a></li>
+									<li><a href="{% url 'taxes' %}">Taxes</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-files-o"></i> <span> Accounting </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="categories.html">Categories</a></li>
+									<li><a href="{% url 'categories' %}">Categories</a></li>
 									<li><a href="budgets.html">Budgets</a></li>
-									<li><a href="budget-expenses.html">Budget Expenses</a></li>
+									<li><a href="{% url 'budget_expenses' %}">Budget Expenses</a></li>
 									<li><a href="budget-revenues.html">Budget Revenues</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-money"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="salary.html"> Employee Salary </a></li>
-									<li><a href="salary-view.html"> Payslip </a></li>
-									<li><a href="payroll-items.html"> Payroll Items </a></li>
+									<li><a href="{% url 'salary' %}"> Employee Salary </a></li>
+									<li><a href="{% url 'salary_view' %}"> Payslip </a></li>
+									<li><a href="{% url 'payroll_items' %}"> Payroll Items </a></li>
 								</ul>
 							</li>
 							<li> 
-								<a href="policies.html"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
+								<a href="{% url 'policies' %}"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="expense-reports.html"> Expense Report </a></li>
-									<li><a href="invoice-reports.html"> Invoice Report </a></li>
-									<li><a href="payments-reports.html"> Payments Report </a></li>
-									<li><a href="project-reports.html"> Project Report </a></li>
-									<li><a href="task-reports.html"> Task Report </a></li>
-									<li><a href="user-reports.html"> User Report </a></li>
-									<li><a href="employee-reports.html"> Employee Report </a></li>
-									<li><a href="payslip-reports.html"> Payslip Report </a></li>
+									<li><a href="{% url 'expense_reports' %}"> Expense Report </a></li>
+									<li><a href="{% url 'invoice_reports' %}"> Invoice Report </a></li>
+									<li><a href="{% url 'payments_reports' %}"> Payments Report </a></li>
+									<li><a href="{% url 'project_reports' %}"> Project Report </a></li>
+									<li><a href="{% url 'task_reports' %}"> Task Report </a></li>
+									<li><a href="{% url 'user_reports' %}"> User Report </a></li>
+									<li><a href="{% url 'employee_reports' %}"> Employee Report </a></li>
+									<li><a href="{% url 'payslip_reports' %}"> Payslip Report </a></li>
 									<li><a href="attendance-reports.html"> Attendance Report </a></li>
-									<li><a href="leave-reports.html"> Leave Report </a></li>
-									<li><a href="daily-reports.html"> Daily Report </a></li>
+									<li><a href="{% url 'leave_reports' %}"> Leave Report </a></li>
+									<li><a href="{% url 'daily_reports' %}"> Daily Report </a></li>
 								</ul>
 							</li>
 							<li class="menu-title"> 
@@ -454,62 +456,62 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-graduation-cap"></i> <span> Performance </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="performance-indicator.html"> Performance Indicator </a></li>
-									<li><a href="performance.html"> Performance Review </a></li>
-									<li><a href="performance-appraisal.html"> Performance Appraisal </a></li>
+									<li><a href="{% url 'performance_indicator' %}"> Performance Indicator </a></li>
+									<li><a href="{% url 'performance' %}"> Performance Review </a></li>
+									<li><a href="{% url 'performance_appraisal' %}"> Performance Appraisal </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-crosshairs"></i> <span> Goals </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="goal-tracking.html"> Goal List </a></li>
-									<li><a href="goal-type.html"> Goal Type </a></li>
+									<li><a href="{% url 'goal_tracking' %}"> Goal List </a></li>
+									<li><a href="{% url 'goal_type' %}"> Goal Type </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-edit"></i> <span> Training </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="training.html"> Training List </a></li>
-									<li><a href="trainers.html"> Trainers</a></li>
-									<li><a href="training-type.html"> Training Type </a></li>
+									<li><a href="{% url 'training' %}"> Training List </a></li>
+									<li><a href="{% url 'trainers' %}"> Trainers</a></li>
+									<li><a href="{% url 'training_type' %}"> Training Type </a></li>
 								</ul>
 							</li>
-							<li><a href="promotion.html"><i class="la la-bullhorn"></i> <span>Promotion</span></a></li>
-							<li><a href="resignation.html"><i class="la la-external-link-square"></i> <span>Resignation</span></a></li>
-							<li><a href="termination.html"><i class="la la-times-circle"></i> <span>Termination</span></a></li>
+							<li><a href="{% url 'promotion' %}"><i class="la la-bullhorn"></i> <span>Promotion</span></a></li>
+							<li><a href="{% url 'resignation' %}"><i class="la la-external-link-square"></i> <span>Resignation</span></a></li>
+							<li><a href="{% url 'taxes' %}"><i class="la la-times-circle"></i> <span>Termination</span></a></li>
 							<li class="menu-title"> 
 								<span>Administration</span>
 							</li>
 							<li> 
-								<a href="assets.html"><i class="la la-object-ungroup"></i> <span>Assets</span></a>
+								<a href="{% url 'assets' %}"><i class="la la-object-ungroup"></i> <span>Assets</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-briefcase"></i> <span> Jobs </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="active" href="user-dashboard.html"> User Dasboard </a></li>
-									<li><a href="jobs-dashboard.html"> Jobs Dasboard </a></li>
-									<li><a href="jobs.html"> Manage Jobs </a></li>
-									<li><a href="manage-resumes.html"> Manage Resumes </a></li>
-									<li><a href="shortlist-candidates.html"> Shortlist Candidates </a></li>
-									<li><a href="interview-questions.html"> Interview Questions </a></li>
+									<li><a class="active" href="{% url 'user_dashboard' %}"> User Dasboard </a></li>
+									<li><a href="{% url 'jobs_dashboard' %}"> Jobs Dasboard </a></li>
+									<li><a href="{% url 'jobs' %}"> Manage Jobs </a></li>
+									<li><a href="{% url 'manage_resumes' %}"> Manage Resumes </a></li>
+									<li><a href="shortlist-{% url 'candidates' %}"> Shortlist Candidates </a></li>
+									<li><a href="{% url 'interview_questions' %}"> Interview Questions </a></li>
 									<li><a href="offer_approvals.html"> Offer Approvals </a></li>
 									<li><a href="experiance-level.html"> Experience Level </a></li>
-									<li><a href="candidates.html"> Candidates List </a></li>
-									<li><a href="schedule-timing.html"> Schedule timing </a></li>
-									<li><a href="apptitude-result.html"> Aptitude Results </a></li>
+									<li><a href="{% url 'candidates' %}"> Candidates List </a></li>
+									<li><a href="{% url 'schedule_timing' %}"> Schedule timing </a></li>
+									<li><a href="{% url 'aptitude_result' %}"> Aptitude Results </a></li>
 								</ul>
 							</li>
 							<li> 
-								<a href="knowledgebase.html"><i class="la la-question"></i> <span>Knowledgebase</span></a>
+								<a href="{% url 'knowledgebase' %}"><i class="la la-question"></i> <span>Knowledgebase</span></a>
 							</li>
 							<li> 
-								<a href="activities.html"><i class="la la-bell"></i> <span>Activities</span></a>
+								<a href="{% url 'activities' %}"><i class="la la-bell"></i> <span>Activities</span></a>
 							</li>
 							<li> 
-								<a href="users.html"><i class="la la-user-plus"></i> <span>Users</span></a>
+								<a href="{% url 'users' %}"><i class="la la-user-plus"></i> <span>Users</span></a>
 							</li>
 							<li> 
-								<a href="settings.html"><i class="la la-cog"></i> <span>Settings</span></a>
+								<a href="{% url 'settings' %}"><i class="la la-cog"></i> <span>Settings</span></a>
 							</li>
 							<li class="menu-title"> 
 								<span>Pages</span>
@@ -517,42 +519,42 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="profile.html"> Employee Profile </a></li>
-									<li><a href="client-profile.html"> Client Profile </a></li>
+									<li><a href="{% url 'profile' %}"> Employee Profile </a></li>
+									<li><a href="{% url 'client_profile' %}"> Client Profile </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-key"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="index.html"> Login </a></li>
-									<li><a href="register.html"> Register </a></li>
-									<li><a href="forgot-password.html"> Forgot Password </a></li>
-									<li><a href="otp.html"> OTP </a></li>
-									<li><a href="lock-screen.html"> Lock Screen </a></li>
+									<li><a href="{% url 'home' %}"> Login </a></li>
+									<li><a href="{% url 'register' %}"> Register </a></li>
+									<li><a href="{% url 'forgot_password' %}"> Forgot Password </a></li>
+									<li><a href="{% url 'otp' %}"> OTP </a></li>
+									<li><a href="{% url 'lock_screen' %}"> Lock Screen </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-exclamation-triangle"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="error-404.html">404 Error </a></li>
-									<li><a href="error-500.html">500 Error </a></li>
+									<li><a href="{% url 'error_404' %}">404 Error </a></li>
+									<li><a href="{% url 'error_500' %}">500 Error </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-hand-o-up"></i> <span> Subscriptions </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="subscriptions.html"> Subscriptions (Admin) </a></li>
-									<li><a href="subscriptions-company.html"> Subscriptions (Company) </a></li>
-									<li><a href="subscribed-companies.html"> Subscribed Companies</a></li>
+									<li><a href="{% url 'subscriptions' %}"> Subscriptions (Admin) </a></li>
+									<li><a href="{% url 'subscriptions_company' %}"> Subscriptions (Company) </a></li>
+									<li><a href="{% url 'subscribed_companies' %}"> Subscribed Companies</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-columns"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="search.html"> Search </a></li>
-									<li><a href="faq.html"> FAQ </a></li>
-									<li><a href="terms.html"> Terms </a></li>
-									<li><a href="privacy-policy.html"> Privacy Policy </a></li>
+									<li><a href="{% url 'search' %}"> Search </a></li>
+									<li><a href="{% url 'faq' %}"> FAQ </a></li>
+									<li><a href="{% url 'terms' %}"> Terms </a></li>
+									<li><a href="{% url 'privacy_policy' %}"> Privacy Policy </a></li>
 									<li><a href="blank-page.html"> Blank Page </a></li>
 								</ul>
 							</li>
@@ -560,24 +562,24 @@
 								<span>UI Interface</span>
 							</li>
 							<li> 
-								<a href="components.html"><i class="la la-puzzle-piece"></i> <span>Components</span></a>
+								<a href="{% url 'components' %}"><i class="la la-puzzle-piece"></i> <span>Components</span></a>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-object-group"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="form-basic-inputs.html">Basic Inputs </a></li>
-									<li><a href="form-input-groups.html">Input Groups </a></li>
-									<li><a href="form-horizontal.html">Horizontal Form </a></li>
-									<li><a href="form-vertical.html"> Vertical Form </a></li>
-									<li><a href="form-mask.html"> Form Mask </a></li>
-									<li><a href="form-validation.html"> Form Validation </a></li>
+									<li><a href="{% url 'form_basic_inputs' %}">Basic Inputs </a></li>
+									<li><a href="{% url 'form_input_groups' %}">Input Groups </a></li>
+									<li><a href="{% url 'form_horizontal' %}">Horizontal Form </a></li>
+									<li><a href="{% url 'form_vertical' %}"> Vertical Form </a></li>
+									<li><a href="{% url 'form_mask' %}"> Form Mask </a></li>
+									<li><a href="{% url 'form_validation' %}"> Form Validation </a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="#"><i class="la la-table"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="tables-basic.html">Basic Tables </a></li>
-									<li><a href="data-tables.html">Data Table </a></li>
+									<li><a href="{% url 'tables_basic' %}">Basic Tables </a></li>
+									<li><a href="{% url 'data_tables' %}">Data Table </a></li>
 								</ul>
 							</li>
 							<li class="menu-title"> 
@@ -629,7 +631,7 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">Visitied Jobs</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="{% url 'admin_dashboard' %}">Dashboard</a></li>
 									<li class="breadcrumb-item ">Jobs</li>
 									<li class="breadcrumb-item">User Dashboard</li>
 									<li class="breadcrumb-item active">Visitied Jobs</li>
@@ -644,14 +646,14 @@
 						<div class="card-body">
 							<!-- <h4 class="card-title">Solid justified</h4> -->
 							<ul class="nav nav-tabs nav-tabs-solid nav-justified">
-								<li class="nav-item"><a class="nav-link" href="user-dashboard.html">Dashboard</a></li>
-								<li class="nav-item"><a class="nav-link" href="user-all-jobs.html">All </a></li>
-								<li class="nav-item"><a class="nav-link" href="saved-jobs.html">Saved</a></li>
-								<li class="nav-item"><a class="nav-link" href="applied-jobs.html">Applied</a></li>
-								<li class="nav-item"><a class="nav-link" href="interviewing.html">Interviewing</a></li>
-								<li class="nav-item"><a class="nav-link" href="offered-jobs.html">Offered</a></li>
-								<li class="nav-item"><a class="nav-link active" href="visited-jobs.html">Visitied </a></li>
-								<li class="nav-item"><a class="nav-link" href="archived-jobs.html">Archived </a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'user_dashboard' %}">Dashboard</a></li>
+								<li class="nav-item"><a class="nav-link" href="user-all-{% url 'jobs' %}">All </a></li>
+								<li class="nav-item"><a class="nav-link" href="saved-{% url 'jobs' %}">Saved</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'applied_jobs' %}">Applied</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'interviewing' %}">Interviewing</a></li>
+								<li class="nav-item"><a class="nav-link" href="offered-{% url 'jobs' %}">Offered</a></li>
+								<li class="nav-item"><a class="nav-link active" href="visited-{% url 'jobs' %}">Visitied </a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'archived_jobs' %}">Archived </a></li>
 							</ul>
 						</div>
 					</div>	
@@ -717,7 +719,7 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><a href="job-details.html">Web Developer</a></td>
+											<td><a href="{% url 'job_details' %}">Web Developer</a></td>
 											<td>Development</td>
 											<td>3 Mar 2019</td>
 											<td>31 May 2019</td>
@@ -738,7 +740,7 @@
 										</tr>
 										<tr>
 											<td>2</td>
-											<td><a href="job-details.html">Web Designer</a></td>
+											<td><a href="{% url 'job_details' %}">Web Designer</a></td>
 											<td>Designing</td>
 											<td>3 Mar 2019</td>
 											<td>31 May 2019</td>
@@ -759,7 +761,7 @@
 										</tr>
 										<tr>
 											<td>3</td>
-											<td><a href="job-details.html">Android Developer</a></td>
+											<td><a href="{% url 'job_details' %}">Android Developer</a></td>
 											<td>Android</td>
 											<td>3 Mar 2019</td>
 											<td>31 May 2019</td>
