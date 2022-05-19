@@ -268,7 +268,7 @@ def manage_resumes(request):
     return render(request, 'manage-resumes.html')
 
 def notifications_settings(request):
-    return render(request, 'notificatiosn-settings.html')
+    return render(request, 'notifications-settings.html')
 
 def offer_approvals(request):
     return render(request, 'offer-approvals.html')
@@ -342,7 +342,7 @@ def questions(request):
 def register(request):
     return render(request, 'register.html')
 
-def resigation(request):
+def resignation(request):
     return render(request, 'resignation.html')
 
 def roles_permissions(request):
@@ -424,7 +424,7 @@ def timesheet(request):
     return render(request, 'timesheet.html')
 
 def toxbox_settings(request):
-    return render(request, 'toxbox-settings.html')
+    return render(request, 'toxbox-setting.html')
 
 def trainers(request):
     return render(request, 'trainers.html')
