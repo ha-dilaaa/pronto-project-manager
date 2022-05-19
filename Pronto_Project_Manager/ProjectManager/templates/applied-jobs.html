@@ -48,7 +48,7 @@
 			
 				<!-- Logo -->
                 <div class="header-left">
-                    <a href="admin-dashboard.html" class="logo">
+                    <a href="{% url 'admin_dashboard' %}" class="logo">
 						<img src="assets/img/logo.png" width="40" height="40" alt="">
 					</a>
                 </div>
@@ -341,7 +341,7 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+									<li><a href="{% url 'admin_dashboard' %}">Admin Dashboard</a></li>
 									<li><a href="{% url 'employee_dashboard' %}">Employee Dashboard</a></li>
 								</ul>
 							</li>
@@ -419,9 +419,9 @@
 								<a href="#"><i class="la la-files-o"></i> <span> Accounting </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a href="{% url 'categories' %}">Categories</a></li>
-									<li><a href="budgets.html">Budgets</a></li>
+									<li><a href="{% url 'budgets' %}">Budgets</a></li>
 									<li><a href="{% url 'budget_expenses' %}">Budget Expenses</a></li>
-									<li><a href="budget-revenues.html">Budget Revenues</a></li>
+									<li><a href="{% url 'budget_revenues' %}">Budget Revenues</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
@@ -493,13 +493,13 @@
 									<li><a href="{% url 'jobs_dashboard' %}"> Jobs Dasboard </a></li>
 									<li><a href="{% url 'jobs' %}"> Manage Jobs </a></li>
 									<li><a href="{% url 'manage_resumes' %}"> Manage Resumes </a></li>
-									<li><a href="shortlist-{% url 'candidates' %}"> Shortlist Candidates </a></li>
+									<li><a href="{% url 'shortlist_candidates' %}"> Shortlist Candidates </a></li>
 									<li><a href="{% url 'interview_questions' %}"> Interview Questions </a></li>
 									<li><a href="offer_approvals.html"> Offer Approvals </a></li>
 									<li><a href="experiance-level.html"> Experience Level </a></li>
 									<li><a href="{% url 'candidates' %}"> Candidates List </a></li>
 									<li><a href="{% url 'schedule_timing' %}"> Schedule timing </a></li>
-									<li><a href="apptitude-result.html"> Aptitude Results </a></li>
+									<li><a href="{% url 'aptitude_result' %}"> Aptitude Results </a></li>
 								</ul>
 							</li>
 							<li> 
@@ -556,7 +556,7 @@
 									<li><a href="{% url 'faq' %}"> FAQ </a></li>
 									<li><a href="{% url 'terms' %}"> Terms </a></li>
 									<li><a href="{% url 'privacy_policy' %}"> Privacy Policy </a></li>
-									<li><a href="blank-page.html"> Blank Page </a></li>
+									<li><a href="{% url 'blank_page' %}"> Blank Page </a></li>
 								</ul>
 							</li>
 							<li class="menu-title"> 
@@ -632,7 +632,7 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">Applied Jobs</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="admin-dashboard.html">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="{% url 'admin_dashboard' %}">Dashboard</a></li>
 									<li class="breadcrumb-item ">Jobs</li>
 									<li class="breadcrumb-item">User Dashboard</li>
 									<li class="breadcrumb-item active">Applied Jobs</li>
