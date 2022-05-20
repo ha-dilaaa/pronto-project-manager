@@ -12,19 +12,19 @@
         <title>Contacts - HRMS admin template</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
 		
 		<!-- Lineawesome CSS -->
-		<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'assets/css/line-awesome.min.css' %}">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="{% url 'admin_dashboard' %}" class="logo">
-						<img src="assets/img/logo.png" width="40" height="40" alt="">
+						<img src="{% static 'assets/img/logo.png' %}" width="40" height="40" alt="">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -83,20 +83,20 @@
 					<!-- Flag -->
 					<li class="nav-item dropdown has-arrow flag-nav">
 						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
-							<img src="assets/img/flags/us.png" alt="" height="20"> <span>English</span>
+							<img src="{% static 'assets/img/flags/us.png' %}" alt="" height="20"> <span>English</span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/us.png" alt="" height="16"> English
+								<img src="{% static 'assets/img/flags/us.png' %}" alt="" height="16"> English
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/fr.png" alt="" height="16"> French
+								<img src="{% static 'assets/img/flags/es.png' %}" alt="" height="16"> French
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/es.png" alt="" height="16"> Spanish
+								<img src="{% static 'assets/img/flags/es.png' %}" alt="" height="16"> Spanish
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/de.png" alt="" height="16"> German
+								<img src="{% static 'assets/img/flags/de.png' %}" alt="" height="16"> German
 							</a>
 						</div>
 					</li>
@@ -118,7 +118,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-02.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -131,7 +131,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-03.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-03.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
@@ -144,7 +144,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-06.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-06.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
@@ -157,7 +157,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-17.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-17.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
@@ -170,7 +170,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-13.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-13.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
@@ -205,7 +205,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-09.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-09.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -222,7 +222,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-02.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -239,7 +239,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-03.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-03.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -256,7 +256,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-05.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-05.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -273,7 +273,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-08.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-08.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -296,7 +296,7 @@
 
 					<li class="nav-item dropdown has-arrow main-drop">
 						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-							<span class="user-img"><img src="assets/img/profiles/avatar-21.jpg" alt="">
+							<span class="user-img"><img src="{% static 'assets/img/profiles/avatar-21.jpg' %}" alt="">
 							<span class="status online"></span></span>
 							<span>Admin</span>
 						</a>
@@ -392,7 +392,7 @@
 								<a href="{% url 'leads' %}"><i class="la la-user-secret"></i> <span>Leads</span></a>
 							</li>
 							<li> 
-								<a href="{% url 'tickets' %}ets' %}"><i class="la la-ticket"></i> <span>Tickets</span></a>
+								<a href="{% url 'tickets' %}"><i class="la la-ticket"></i> <span>Tickets</span></a>
 							</li>
 							<li class="menu-title"> 
 								<span>HR</span>
@@ -439,7 +439,7 @@
 									<li><a href="{% url 'user_reports' %}"> User Report </a></li>
 									<li><a href="{% url 'employee_reports' %}"> Employee Report </a></li>
 									<li><a href="{% url 'payslip_reports' %}"> Payslip Report </a></li>
-									<li><a href="attendance-reports.html"> Attendance Report </a></li>
+									<li><a href="{% url 'attendance_reports' %}"> Attendance Report </a></li>
 									<li><a href="{% url 'leave_reports' %}"> Leave Report </a></li>
 									<li><a href="{% url 'daily_reports' %}"> Daily Report </a></li>
 								</ul>
@@ -488,8 +488,8 @@
 									<li><a href="{% url 'manage_resumes' %}"> Manage Resumes </a></li>
 									<li><a href="{% url 'shortlist_candidates' %}"> Shortlist Candidates </a></li>
 									<li><a href="{% url 'interview_questions' %}"> Interview Questions </a></li>
-									<li><a href="offer_approvals.html"> Offer Approvals </a></li>
-									<li><a href="experiance-level.html"> Experience Level </a></li>
+									<li><a href="{% url 'offer_approvals' %}"> Offer Approvals </a></li>
+									<li><a href="{% url 'experience_level' %}"> Experience Level </a></li>
 									<li><a href="{% url 'candidates' %}"> Candidates List </a></li>
 									<li><a href="{% url 'schedule_timing' %}"> Schedule timing </a></li>
 									<li><a href="{% url 'aptitude_result' %}"> Aptitude Results </a></li>
@@ -671,7 +671,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-02.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -694,7 +694,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-09.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-09.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -717,7 +717,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-10.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-10.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -740,7 +740,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-05.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-05.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -763,7 +763,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-11.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-10.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -809,7 +809,7 @@
 															<div class="contact-cont">
 																<div class="float-start user-img">
 																	<a href="{% url 'profile' %}" class="avatar">
-																		<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-13.jpg">
+																		<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-13.jpg' %}">
 																		<span class="status online"></span>
 																	</a>
 																</div>
@@ -1056,16 +1056,16 @@
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
 		
 		<!-- Slimscroll JS -->
-		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}"></script>
 		
 		<!-- Custom JS -->
-		<script src="assets/js/app.js"></script>
+		<script src="{% static 'assets/js/app.js' %}"></script>
 
 	</body>
 

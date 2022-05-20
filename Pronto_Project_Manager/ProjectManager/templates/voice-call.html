@@ -12,19 +12,19 @@
         <title>Voice Call - HRMS admin template</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
 		
 		<!-- Lineawesome CSS -->
-        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'assets/css/line-awesome.min.css' %}">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -43,7 +43,7 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="{% url 'admin_dashboard' %}" class="logo">
-						<img src="assets/img/logo.png" width="40" height="40" alt="">
+						<img src="{% static 'assets/img/logo.png' %}" width="40" height="40" alt="">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -84,20 +84,20 @@
 					<!-- Flag -->
 					<li class="nav-item dropdown has-arrow flag-nav">
 						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
-							<img src="assets/img/flags/us.png" alt="" height="20"> <span>English</span>
+							<img src="{% static 'assets/img/flags/us.png' %}" alt="" height="20"> <span>English</span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/us.png" alt="" height="16"> English
+								<img src="{% static 'assets/img/flags/us.png' %}" alt="" height="16"> English
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/fr.png" alt="" height="16"> French
+								<img src="{% static 'assets/img/flags/es.png' %}" alt="" height="16"> French
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/es.png" alt="" height="16"> Spanish
+								<img src="{% static 'assets/img/flags/es.png' %}" alt="" height="16"> Spanish
 							</a>
 							<a href="javascript:void(0);" class="dropdown-item">
-								<img src="assets/img/flags/de.png" alt="" height="16"> German
+								<img src="{% static 'assets/img/flags/de.png' %}" alt="" height="16"> German
 							</a>
 						</div>
 					</li>
@@ -119,7 +119,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-02.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -132,7 +132,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-03.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-03.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
@@ -145,7 +145,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-06.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-06.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
@@ -158,7 +158,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-17.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-17.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
@@ -171,7 +171,7 @@
 										<a href="{% url 'activities' %}">
 											<div class="media d-flex">
 												<span class="avatar flex-shrink-0">
-													<img alt="" src="assets/img/profiles/avatar-13.jpg">
+													<img alt="" src="{% static 'assets/img/profiles/avatar-13.jpg' %}">
 												</span>
 												<div class="media-body flex-grow-1">
 													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
@@ -206,7 +206,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-09.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-09.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -223,7 +223,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-02.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -240,7 +240,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-03.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-03.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -257,7 +257,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-05.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-05.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -274,7 +274,7 @@
 											<div class="list-item">
 												<div class="list-left">
 													<span class="avatar">
-														<img alt="" src="assets/img/profiles/avatar-08.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-08.jpg' %}">
 													</span>
 												</div>
 												<div class="list-body">
@@ -297,7 +297,7 @@
 
 					<li class="nav-item dropdown has-arrow main-drop">
 						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-							<span class="user-img"><img src="assets/img/profiles/avatar-21.jpg" alt="">
+							<span class="user-img"><img src="{% static 'assets/img/profiles/avatar-21.jpg' %}" alt="">
 							<span class="status online"></span></span>
 							<span>Admin</span>
 						</a>
@@ -369,7 +369,7 @@
 							<li>
 								<a href="{% url 'chat' %}">
 									<span class="chat-avatar-sm user-img">
-										<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-02.jpg"><span class="status online"></span>
+										<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}"><span class="status online"></span>
 									</span> 
 									<span class="chat-user">John Doe</span> <span class="badge rounded-pill bg-danger">1</span>
 								</a>
@@ -377,7 +377,7 @@
 							<li>
 								<a href="{% url 'chat' %}">
 									<span class="chat-avatar-sm user-img">
-										<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-09.jpg"><span class="status offline"></span>
+										<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-09.jpg' %}"><span class="status offline"></span>
 									</span> 
 									<span class="chat-user">Richard Miles</span> <span class="badge rounded-pill bg-danger">7</span>
 								</a>
@@ -385,7 +385,7 @@
 							<li>
 								<a href="{% url 'chat' %}">
 									<span class="chat-avatar-sm user-img">
-										<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-10.jpg"><span class="status away"></span>
+										<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-10.jpg' %}"><span class="status away"></span>
 									</span> 
 									<span class="chat-user">John Smith</span>
 								</a>
@@ -393,7 +393,7 @@
 							<li class="active">
 								<a href="{% url 'chat' %}">
 									<span class="chat-avatar-sm user-img">
-										<img class="rounded-circle" alt="" src="assets/img/profiles/avatar-05.jpg"><span class="status online"></span>
+										<img class="rounded-circle" alt="" src="{% static 'assets/img/profiles/avatar-05.jpg' %}"><span class="status online"></span>
 									</span> 
 									<span class="chat-user">Mike Litorus</span> <span class="badge rounded-pill bg-danger">2</span>
 								</a>
@@ -417,7 +417,7 @@
 										<div class="user-details me-auto">
 											<div class="float-start user-img">
 												<a class="avatar" href="{% url 'profile' %}" title="Mike Litorus">
-													<img src="assets/img/profiles/avatar-05.jpg" alt="" class="rounded-circle">
+													<img src="{% static 'assets/img/profiles/avatar-05.jpg' %}" alt="" class="rounded-circle">
 													<span class="status online"></span>
 												</a>
 											</div>
@@ -442,7 +442,7 @@
 								<div class="chat-contents">
 									<div class="chat-content-wrap">
 										<div class="voice-call-avatar">
-											<img src="assets/img/profiles/avatar-02.jpg" alt="" class="call-avatar">
+											<img src="{% static 'assets/img/profiles/avatar-02.jpg' %}" alt="" class="call-avatar">
 											<span class="username">John Doe</span>
 											<span class="call-timing-count">00:59</span>
 										</div>
@@ -450,19 +450,19 @@
 											<ul>
 												<li>
 													<a href="#">
-														<img src="assets/img/profiles/avatar-03.jpg" class="img-fluid" alt="">
+														<img src="{% static 'assets/img/profiles/avatar-03.jpg' %}" class="img-fluid" alt="">
 														<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
 													</a>
 												</li>
 												<li>
 													<a href="#">
-														<img src="assets/img/profiles/avatar-08.jpg" class="img-fluid" alt="">
+														<img src="{% static 'assets/img/profiles/avatar-08.jpg' %}" class="img-fluid" alt="">
 														<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
 													</a>
 												</li>
 												<li>
 													<a href="#">
-														<img src="assets/img/profiles/avatar-05.jpg" class="img-fluid" alt="">
+														<img src="{% static 'assets/img/profiles/avatar-05.jpg' %}" class="img-fluid" alt="">
 														<span class="call-mute"><i class="fa fa-microphone-slash"></i></span>
 													</a>
 												</li>
@@ -515,7 +515,7 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="{% url 'profile' %}" class="avatar">
-																<img alt="John Doe" src="assets/img/profiles/avatar-02.jpg">
+																<img alt="John Doe" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 															</a>
 														</div>
 														<div class="chat-body">
@@ -537,7 +537,7 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="{% url 'profile' %}" class="avatar">
-																<img alt="" src="assets/img/profiles/avatar-02.jpg">
+																<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 															</a>
 														</div>
 														<div class="chat-body">
@@ -561,7 +561,7 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="{% url 'profile' %}" class="avatar">
-																<img alt="" src="assets/img/profiles/avatar-09.jpg">
+																<img alt="" src="{% static 'assets/img/profiles/avatar-09.jpg' %}">
 															</a>
 														</div>
 														<div class="chat-body">
@@ -583,7 +583,7 @@
 													<div class="chat chat-left">
 														<div class="chat-avatar">
 															<a href="{% url 'profile' %}" class="avatar">
-																<img alt="" src="assets/img/profiles/avatar-02.jpg">
+																<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 															</a>
 														</div>
 														<div class="chat-body">
@@ -616,7 +616,7 @@
 																<div class="chat chat-left">
 																	<div class="chat-avatar">
 																		<a href="{% url 'profile' %}" class="avatar">
-																			<img alt="" src="assets/img/profiles/avatar-02.jpg">
+																			<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 																		</a>
 																	</div>
 																	<div class="chat-body">
@@ -632,7 +632,7 @@
 																<div class="chat chat-left">
 																	<div class="chat-avatar">
 																		<a href="{% url 'profile' %}" class="avatar">
-																			<img alt="" src="assets/img/profiles/avatar-02.jpg">
+																			<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 																		</a>
 																	</div>
 																	<div class="chat-body">
@@ -715,7 +715,7 @@
 													<div class="table-content">
 														<div class="chat-profile-img">
 															<div class="edit-profile-img">
-																<img src="assets/img/profiles/avatar-02.jpg" alt="">
+																<img src="{% static 'assets/img/profiles/avatar-02.jpg' %}" alt="">
 																<span class="change-img">Change Image</span>
 															</div>
 															<h3 class="user-name m-t-10 mb-0">John Doe</h3>
@@ -952,7 +952,7 @@
 										<li>
 											<a href="#">
 												<div class="media d-flex">
-													<span class="avatar align-self-center flex-shrink-0"><img alt="" src="assets/img/profiles/avatar-13.jpg"></span>
+													<span class="avatar align-self-center flex-shrink-0"><img alt="" src="{% static 'assets/img/profiles/avatar-13.jpg' %}"></span>
 													<div class="media-body align-self-center text-nowrap flex-grow-1">
 														<div class="user-name">Bernardo Galaviz</div>
 														<span class="designation">Web Developer</span>
@@ -967,7 +967,7 @@
 											<a href="#">
 												<div class="media d-flex">
 													<span class="avatar align-self-center flex-shrink-0">
-														<img alt="" src="assets/img/profiles/avatar-02.jpg">
+														<img alt="" src="{% static 'assets/img/profiles/avatar-02.jpg' %}">
 													</span>
 													<div class="media-body text-nowrap align-self-center flex-grow-1">
 														<div class="user-name">John Doe</div>
@@ -1032,16 +1032,16 @@
 		<!-- /Main Wrapper -->
 
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
 
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
 
 		<!-- Slimscroll JS -->
-		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}"></script>
 
 		<!-- Custom JS -->
-		<script src="assets/js/app.js"></script>
+		<script src="{% static 'assets/js/app.js' %}"></script>
 
     </body>
 </html>
