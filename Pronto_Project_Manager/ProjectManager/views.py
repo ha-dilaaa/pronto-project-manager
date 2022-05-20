@@ -52,7 +52,7 @@ def budgets(request):
     return render(request, 'budgets.html')
 
 def calendar(request):
-    return render(request, 'calendar.html')
+    return render(request, 'calender.html')
 
 def candidates(request):
     return render(request, 'candidates.html')
@@ -271,7 +271,7 @@ def notifications_settings(request):
     return render(request, 'notifications-settings.html')
 
 def offer_approvals(request):
-    return render(request, 'offer-approvals.html')
+    return render(request, 'offer_approvals.html')
 
 def offered_jobs(request):
     return render(request, 'offered-jobs.html')
@@ -331,7 +331,7 @@ def projects(request):
     return render(request, 'projects.html')
 
 def promotion(request):
-    return render(request, 'promotions.html')
+    return render(request, 'promotion.html')
 
 def provident_fund(request):
     return render(request, 'provident-fund.html')
@@ -415,7 +415,7 @@ def theme_settings(request):
     return render(request, 'theme-settings.html')
 
 def ticket_view(request):
-    return render(request, 'ticekt-view.html')
+    return render(request, 'ticket-view.html')
 
 def tickets(request):
     return render(request, 'tickets.html')
