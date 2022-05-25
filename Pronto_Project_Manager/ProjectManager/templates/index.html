@@ -5,128 +5,123 @@
 {% load static %}
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <meta name="description" content="Project Manager">
-		<meta name="keywords" content="Total Construction Management">
-        <meta name="author" content=""> 
-        <meta name="robots" content="noindex, nofollow">
-        <title>Project Manager</title>
-		
-		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
-		
-		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-		
-		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}' %}">
-		
-		<!-- Main CSS -->
-        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
-    </head>
-    <body class="account-page">
-	
-		<!-- Main Wrapper -->
-        <div class="main-wrapper">
-			<div class="account-content">
-				<div class="container">
-				
-					<!-- Account Logo -->
-					<div class="account-logo">
-						<a href=""><img src="{% static 'assets/img/logo2.png' %}" alt="Effixment Technologies"></a>
-					</div>
-					<!-- /Account Logo -->
-					
-					<div class="account-box">
-						<div class="account-wrapper">
-							<h3 class="account-title">Login</h3>
-							<p class="account-subtitle">Access to our dashboard</p>
-							
-							<!-- Account Form -->
-							<form action="{% url 'admin_dashboard' %}">
-								<div class="form-group">
-									<label>Email Address</label>
-									<input class="form-control" type="text" value="admin@dreamguys.in">
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col">
-											<label>Password</label>
-										</div>
-										<div class="col-auto">
-											<a class="text-muted" href="{% url 'forgot_password' %}">
-												Forgot password?
-											</a>
-										</div>
-									</div>
-									<div class="position-relative">
-										<input class="form-control" type="password" value="123456" id="password">
-										<span class="fa fa-eye-slash" id="toggle-password"></span>
-									</div>
-								</div>
-								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" type="submit">Login</button>
-								</div>
-								<div class="account-footer">
-									<p>Don't have an account yet? <a href="{% url 'register' %}">Register</a></p>
-								</div>
-							</form>
-							<!-- /Account Form -->
-							<br>
-														<!-- Account Form -->
-														<form action="{% url 'admin_dashboard' %}">
-															<div class="form-group">
-																<label>Email Address</label>
-																<input class="form-control" type="text" value="admin@dreamguys.in">
-															</div>
-															<div class="form-group">
-																<div class="row">
-																	<div class="col">
-																		<label>Password</label>
-																	</div>
-																	<div class="col-auto">
-																		<a class="text-muted" href="{% url 'forgot_password' %}">
-																			Forgot password?
-																		</a>
-																	</div>
-																</div>
-																<div class="position-relative">
-																	<input class="form-control" type="password" value="123456" id="password">
-																	<span class="fa fa-eye-slash" id="toggle-password"></span>
-																</div>
-															</div>
-															<div class="form-group text-center">
-																<button class="btn btn-primary account-btn" type="submit">Login</button>
-															</div>
-															<div class="account-footer">
-																<p>Don't have an account yet? <a href="{% url 'register' %}">Register</a></p>
-															</div>
-														</form>
-														<!-- /Account Form -->
-														
-						</div>
-					</div>
+
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		.login-container {
+			margin-top: 5%;
+			margin-bottom: 5%;
+		}
+
+		.login-form-1 {
+			padding: 5%;
+			box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.login-form-1 h3 {
+			text-align: center;
+			color: #333;
+		}
+
+		.login-form-2 {
+			padding: 5%;
+			background: #0062cc;
+			box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.login-form-2 h3 {
+			text-align: center;
+			color: #fff;
+		}
+
+		.login-container form {
+			padding: 10%;
+		}
+
+		.btnSubmit {
+			width: 50%;
+			border-radius: 1rem;
+			padding: 1.5%;
+			border: none;
+			cursor: pointer;
+		}
+
+		.login-form-1 .btnSubmit {
+			font-weight: 600;
+			color: #fff;
+			background-color: #0062cc;
+		}
+
+		.login-form-2 .btnSubmit {
+			font-weight: 600;
+			color: #0062cc;
+			background-color: #fff;
+		}
+
+		.login-form-2 .ForgetPwd {
+			color: #fff;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.login-form-1 .ForgetPwd {
+			color: #0062cc;
+			font-weight: 600;
+			text-decoration: none;
+		}
+	</Style>
+
+	<!------ Include the above in your HEAD tag ---------->
+</head>
+<div class="container login-container">
+	<div class="row">
+		<div class="col-md-6 login-form-1">
+			<h3>Service Provider</h3>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Your Email *" value="" />
 				</div>
-			</div>
-        </div>
-		<!-- /Main Wrapper -->
-		
-		<!-- jQuery -->
-        <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
-		
-		<!-- Bootstrap Core JS -->
-        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
-		
-		<!-- Custom JS -->
-		<script src="{% static 'assets/js/app.js' %}"></script>
-		
-    </body>
-</html>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Your Password *" value="" />
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btnSubmit" value="Login" />
+				</div>
+				<div class="form-group">
+					<a href="#" class="ForgetPwd">Forget Password?</a>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-6 login-form-2">
+			<h3>Users</h3>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Your Email *" value="" />
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Your Password *" value="" />
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btnSubmit" value="Login" />
+				</div>
+				<div class="form-group">
+					<a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- /Main Wrapper -->
+
+<!-- jQuery -->
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Custom JS -->
+<script src="{% static 'assets/js/app.js' %}"></script>
